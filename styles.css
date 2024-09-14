@@ -1,0 +1,249 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF; /* White as a base for all sections */
+  color: #212121; /* Black for main text */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Uniform Section Backgrounds */
+.intro, .section-1, .section-2, .work-experience, .projects, .publications, .extracurricular, .skills {
+  background-color: #E3F2FD; /* Very light blue */
+  padding: 60px 0;
+}
+
+.section {
+  transition: background-color 0.3s;
+  padding-top: 100px; /* Ensure space for the fixed navigation */
+}
+
+.intro .container,
+.section-1 .container,
+.section-2 .container,
+.work-experience .container,
+.projects .container,
+.publications .container,
+.extracurricular .container,
+.skills .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.intro-text1 {
+  max-width: 600px;
+  flex: 1 0 0;
+  color: #ffffff; /* Black text for readability */
+  padding-right: 40px;
+}
+
+
+
+
+.intro-text {
+  max-width: 600px;
+  flex: 1 1 50%;
+  color: #212121; /* Black text for readability */
+  border-radius: 50%;
+  
+}
+
+.intro-text1 h1,
+.intro-text1 h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.intro-text h1,
+.intro-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.intro-text1 h1 span {
+  color: #ffffff; /* Vibrant blue for emphasis */
+}
+
+.intro-text1 p {
+  font-size: 1.1rem;
+  color: #ffffff; /* Light gray text */
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  color: #757575; /* Light gray text */
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1A73E8; /* Primary blue */
+  color: #FFFFFF; /* White text */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0B59A3; /* Darker blue for hover */
+}
+
+.fullscreen-background {
+  background-image: url('https://assets.bizclikmedia.net/1336/a69447d04070534ca5f1fa50b1d88ebc:ee8ec154451564af104adb66395d3d75/gettyimages-1279690567-jpg.webp'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Prevents scrolling beyond the image */
+  position: relative; /* Allows positioning of content within the background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro-image img,
+.intro-image-square img
+.intro-pec {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.intro-image-square {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 30%;
+  height: 300px;
+}
+
+/* Navigation */
+.navigation {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #eaeaea;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: fit-content;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navigation .container {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul {
+  display: flex;
+  padding: 1rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  margin: 0 15px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #212121; /* Black for text */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navigation ul li a:hover {
+  color: #1A73E8; /* Primary blue for hover */
+}
+
+/* Main Content Styles */
+.section h2 {
+  font-size: 2.5em;
+  color: #212121; /* Black text */
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.section h3 {
+  font-size: 1.8em;
+  color: #757575; /* Light gray for subheadings */
+  margin-bottom: 15px;
+}
+
+.intro-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1em;
+  color: #212121; /* Black text */
+}
+
+.colorful {
+  background-color: #E3F2FD; /* Light blue for highlights */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.full-width {
+  background-color: #E3F2FD; /* Very light blue */
+  padding: 60px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.full-width .experience-content {
+  max-width: 100%;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+/* Contact and Footer Styles */
+#contact {
+  background-color: #E3F2FD; /* Very light blue for contact section */
+  text-align: center;
+  padding: 60px 0;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #212121; /* Black text */
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #1A73E8; /* Primary blue for footer */
+  color: #FFFFFF; /* White text */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons img {
+  width: 100%;
+  height: auto;
+}
